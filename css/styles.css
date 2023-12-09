@@ -1,0 +1,12 @@
+.userName{
+    justify-content: space-evenly;
+}
+.pizzaSize{
+    justify-content: space-evenly;
+}
+.toppings{
+    justify-content: space-evenly;
+}
+.hidden {
+    display: none;
+}

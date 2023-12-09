@@ -1,4 +1,4 @@
-# Squared π's pizza
+# Squared π's Pizza
 ###### By: Amy Hruska
 [r²*π](https://github.com/AmyHruska/Pizza-Dec-2023.git) is a pizza parlor which only displays the pizza size in square centimeters; from the personal 314cm² to the massive 1962cm²!
 ### Installation
@@ -29,7 +29,7 @@ Describe: Pizza();
 Test: "It should return a new pizza object with any array for toppings, a property for size, default price and order number"
 Code: let userPizza = new Pizza(["potatoes", "celery"], "314cm²");
 Expected Output: userPizza {
-    toppings: ["potatoes", "celery", "Parsnips"]
+    toppings: ["potatoes", "celery"]
     size: "314cm²"
 }
 

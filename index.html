@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-  <title>Squared π's pizza!</title>
-  <script src="js/scripts.js"></script>
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Squared π's pizza!</title>
+    <script src="js/scripts.js"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
-    <H1>Welcome to squared π's pizza!</H1>
-    <h3>Please enter you name and make a selection below</h3>
-    <form id="addPizza" action="">
+<H1>Welcome to Squared π's pizza!</H1>
+<h3>Please enter you name and make a selection below</h3>
+<form id="addPizza" action="">
+    <div class="userName">
+        <label for="personsNameInput">Please enter your name:</label>
         <input id="personsNameInput" type="text" name="personsNameInput">
+    </div>
+    <div id="nameWarning" class="hidden">Please enter a name (it doesn't have to be yours)</div>
+    <div class="pizzaSize" >
         <label>Pizza size</label>
         <select id="size">
             <option value="0">Choice:</option>
@@ -18,8 +24,24 @@
             <option value="4">1590cm²</option>
             <option value="5">1962cm²</option>
         </select>
-        
-    </form>
+        <div id="sizeWarning" class="hidden">Please choose a size</div>
+    </div>
+    <div class="toppings">
+        <input type="checkbox" id="Celery" name="Celery" value="Carrots" />
+        <label for="Celery">Roasted Celery</label>
+        <input type="checkbox" id="Potatoes" name="Potatoes" value="Potatoes" />
+        <label for="Potatoes">Potatoes</label>
+        <input type="checkbox" id="Carrots" name="Carrots" value="Carrots" />
+        <label for="Carrots">Roasted Carrots</label>
+        <input type="checkbox" id="Anise" name="Anise" value="Anise" />
+        <label for="Anise">Crushed Star Anise</label>
+    </div>
+    <Button id="orderButton" type="submit">Place Order! yay!</Button>
+    <div id="orderOutput" class="hidden"></div>
+
+</form>
+
 <body>
 </body>
+
 </html>
