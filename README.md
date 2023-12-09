@@ -38,8 +38,8 @@ Test "Pizza method for price calculation should take the size and toppings of th
 Code: let userPizza = new Pizza(["potatoes", "celery"], 1);
 userPizza.price();
 Expected Output: userPizza {
-    toppings: ["potatoes", "celery", "Parsnips"]
+    toppings: ["potatoes", "celery"]
     size: 1
-    price: 8
+    price: 7
 }
 ```
