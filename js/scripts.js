@@ -13,32 +13,36 @@ Pizza.prototype.price = function () {
 };
 
 // UI logic
-let orderPizzaBtn = document.getElementById("orderButton")
-let sizeArray = ["314cm²", "706cm²", "1256cm²", "1590cm²", "1962cm²"]
+let orderPizzaBtn = document.getElementById("orderButton");
+let sizeArray = ["314cm²", "706cm²", "1256cm²", "1590cm²", "1962cm²"];
 
 orderPizzaBtn.addEventListener("click", function () {
     event.preventDefault();
     let userName = document.getElementById("userNameInput").value;
     switch (userName) {
-        case (""):
+        case (""): {
             document.getElementById("nameWarning").innerText = "Please enter a name (it doesn't have to be yours)";
             document.getElementById("orderOutput").innerText = "";
             break;
-        default:
+        }
+        default: {
             document.getElementById("nameWarning").innerText = "";
             let size = document.getElementById("size").value;
             switch (size) {
-                case ("0"):
+                case ("0"): {
                     document.getElementById("sizeWarning").innerText = "Please choose a size";
                     document.getElementById("orderOutput").innerText = "";
                     break;
-                default:
+                }
+                default: {
                     document.getElementById("sizeWarning").innerText = "";
                     let chosenToppings = document.querySelectorAll("input[name='toppings']:checked");
                     let userPizza = new Pizza(chosenToppings, size);
                     userPizza.price();
                     let pizzaSizeString = sizeArray[userPizza.size - 1];
-                    document.getElementById("orderOutput").innerText = (userName + "'s" + " " + pizzaSizeString + " " + "Cost:" + " " + "$" + userPizza.price)
+                    document.getElementById("orderOutput").innerText = (userName + "'s" + " " + pizzaSizeString + " " + "Cost:" + " " + "$" + userPizza.price);
+                }
             }
+        }
     }
 });
