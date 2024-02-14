@@ -8,7 +8,7 @@
 #### 2nd method (locally hosted <advanced> )
 * Run the below command in the terminal: 
 ````bash
-$ git clone https://github.com/AmyHruska/Pizza-Dec-2023.git
+$ git clone https://github.com/faeseras/Pizza-Dec-2023.git
 ````
 * Host the folder in a web server of your choice.
 * Navigate to the locally hosted index.html webpage.
