@@ -1,10 +1,10 @@
 # Squared π's Pizza
-###### By: Amy Hruska
-[r²*π](https://github.com/AmyHruska/Pizza-Dec-2023.git) is a pizza parlor which only displays the pizza size in square centimeters; from the personal 314cm² to the massive 1962cm²!
+###### By: Amy
+[r²*π](https://github.com/faesearas/Pizza-Dec-2023.git) is a pizza parlor which only displays the pizza size in square centimeters; from the personal 314cm² to the massive 1962cm²!
 ### Installation
 #### First method (remotely hosted)
 * Open the web browser of your choice. 
-* Navigate [here](https://amyhruska.github.io/Pizza-Dec-2023).
+* Navigate [here](https://faesearas.github.io/Pizza-Dec-2023).
 #### 2nd method (locally hosted <advanced> )
 * Run the below command in the terminal: 
 ````bash
